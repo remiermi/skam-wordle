@@ -1,0 +1,905 @@
+[
+  {
+    "id": "eva-kviig-mohn",
+    "name": "Eva Kviig Mohn",
+    "country": "Norway",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "emma-borges",
+    "name": "Emma Borgès",
+    "country": "France",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "eva-brighi",
+    "name": "Eva Brighi",
+    "country": "Italy",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "hanna-jung",
+    "name": "Hanna Jung",
+    "country": "Germany",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "jana-ackermans",
+    "name": "Jana Ackermans",
+    "country": "Belgium",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "megan-flores",
+    "name": "Megan Flores",
+    "country": "USA",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "isa-keijser",
+    "name": "Isa Keijser",
+    "country": "The Netherlands",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "eva-vazquez-villanueva",
+    "name": "Eva Vázquez Villanueva",
+    "country": "Spain",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "eva-silovic",
+    "name": "Eva Šilović",
+    "country": "Croatia",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "noora-amalie-s-tre",
+    "name": "Noora Amalie Sætre",
+    "country": "Norway",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "manon-demissy",
+    "name": "Manon Demissy",
+    "country": "France",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "eleonora-sava",
+    "name": "Eleonora Sava",
+    "country": "Italy",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "mia-amalie-winter",
+    "name": "Mia Amalie Winter",
+    "country": "Germany",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "zoe-loockx",
+    "name": "Zoë Loockx",
+    "country": "Belgium",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "grace-olsen",
+    "name": "Grace Olsen",
+    "country": "USA",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "liv-reijners",
+    "name": "Liv Reijners",
+    "country": "The Netherlands",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "nora-grace",
+    "name": "Nora Grace",
+    "country": "Spain",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "nora-klaric-selem",
+    "name": "Nora Klarić Selem",
+    "country": "Croatia",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "isak-valtersen",
+    "name": "Isak Valtersen",
+    "country": "Norway",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "lucas-lallemant",
+    "name": "Lucas Lallemant",
+    "country": "France",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "martino-rametta",
+    "name": "Martino Rametta",
+    "country": "Italy",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "matteo-florenzi",
+    "name": "Matteo Florenzi",
+    "country": "Germany",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "robbe-ijzermans",
+    "name": "Robbe IJzermans",
+    "country": "Belgium",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "shay-dixon",
+    "name": "Shay Dixon",
+    "country": "USA",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "lucas-van-der-heijden",
+    "name": "Lucas van Der Heijden",
+    "country": "The Netherlands",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "cris-soto-pena",
+    "name": "Cris Soto Peña",
+    "country": "Spain",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "lovro-devic",
+    "name": "Lovro Dević",
+    "country": "Croatia",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "sana-bakkoush",
+    "name": "Sana Bakkoush",
+    "country": "Norway",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "imane-bakhellal",
+    "name": "Imane Bakhellal",
+    "country": "France",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "sana-allagui",
+    "name": "Sana Allagui",
+    "country": "Italy",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "amira-thalia-mahmood",
+    "name": "Amira Thalia Mahmood",
+    "country": "Germany",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "yasmina-ait-omar",
+    "name": "Yasmina Ait Omar",
+    "country": "Belgium",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "zoya-ali",
+    "name": "Zoya Ali",
+    "country": "USA",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "imaan-elami",
+    "name": "Imaan Elami",
+    "country": "The Netherlands",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "amira-naybet",
+    "name": "Amira Naybet",
+    "country": "Spain",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "vanessa",
+    "name": "Vanessa",
+    "country": "Croatia",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "vilde-hellerud-lien",
+    "name": "Vilde Hellerud Lien",
+    "country": "Norway",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "daphne-lecomte",
+    "name": "Daphné Lecomte",
+    "country": "France",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "silvia-mirabella",
+    "name": "Silvia Mirabella",
+    "country": "Italy",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "kiki-machwitz",
+    "name": "Kiki Machwitz",
+    "country": "Germany",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "amber-snoeckx",
+    "name": "Amber Snoeckx",
+    "country": "Belgium",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "kelsey-russell",
+    "name": "Kelsey Russell",
+    "country": "USA",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "engel-beekman",
+    "name": "Engel Beekman",
+    "country": "The Netherlands",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "elvira-gomez-garcia",
+    "name": "Elvira Gómez García",
+    "country": "Spain",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "tina",
+    "name": "Tina",
+    "country": "Croatia",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "christina-berg-chris",
+    "name": "Christina Berg - Chris",
+    "country": "Norway",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "alexia-martineau-alex",
+    "name": "Alexia Martineau - Alex",
+    "country": "France",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "federica-cacciotti-fede",
+    "name": "Federica Cacciotti - Fede",
+    "country": "Italy",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "sam-m-pele",
+    "name": "Sam M'Pele",
+    "country": "Germany",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "luca-lomans",
+    "name": "Luca Lomans",
+    "country": "Belgium",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "josefina-valcenia-jo",
+    "name": "Josefina Valcenia - Jo",
+    "country": "USA",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "janna-mertens",
+    "name": "Janna Mertens",
+    "country": "The Netherlands",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "nika-nix",
+    "name": "Nika - Nix",
+    "country": "Croatia",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "jonas-noah-vasquez",
+    "name": "Jonas Noah Vasquez",
+    "country": "Norway",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "yann-cazas",
+    "name": "Yann Cazas",
+    "country": "France",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "giovanni-garau",
+    "name": "Giovanni Garau",
+    "country": "Italy",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "jonas-augustin",
+    "name": "Jonas Augustin",
+    "country": "Germany",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "jens-stoffels",
+    "name": "Jens Stoffels",
+    "country": "Belgium",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "marlon-frazier",
+    "name": "Marlon Frazier",
+    "country": "USA",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "kes-senova",
+    "name": "Kes Senova",
+    "country": "The Netherlands",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "jorge-crespo-gimeno",
+    "name": "Jorge Crespo Gimeno",
+    "country": "Spain",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "jakov",
+    "name": "Jakov",
+    "country": "Croatia",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "even-bech-n-sheim",
+    "name": "Even Bech Næsheim",
+    "country": "Norway",
+    "gender": "male",
+    "debut_season": 3
+  },
+  {
+    "id": "eliott-demaury",
+    "name": "Eliott Demaury",
+    "country": "France",
+    "gender": "male",
+    "debut_season": 3
+  },
+  {
+    "id": "niccolo-fares",
+    "name": "Niccolò Fares",
+    "country": "Italy",
+    "gender": "male",
+    "debut_season": 2
+  },
+  {
+    "id": "david-schreibner",
+    "name": "David Schreibner",
+    "country": "Germany",
+    "gender": "male",
+    "debut_season": 3
+  },
+  {
+    "id": "sander-driesen",
+    "name": "Sander Driesen",
+    "country": "Belgium",
+    "gender": "male",
+    "debut_season": 3
+  },
+  {
+    "id": "joana-bianchi-acosta",
+    "name": "Joana Bianchi Acosta",
+    "country": "Spain",
+    "gender": "female",
+    "debut_season": 2
+  },
+  {
+    "id": "ivan-kovacic",
+    "name": "Ivan Kovačić",
+    "country": "Croatia",
+    "gender": "male",
+    "debut_season": 3
+  },
+  {
+    "id": "magnus-fossbakken",
+    "name": "Magnus Fossbakken",
+    "country": "Norway",
+    "gender": "male",
+    "debut_season": 3
+  },
+  {
+    "id": "basile-savary",
+    "name": "Basile Savary",
+    "country": "France",
+    "gender": "male",
+    "debut_season": 3
+  },
+  {
+    "id": "luca-colosio",
+    "name": "Luca Colosio",
+    "country": "Italy",
+    "gender": "male",
+    "debut_season": 2
+  },
+  {
+    "id": "aaron-jacobs",
+    "name": "Aaron Jacobs",
+    "country": "Belgium",
+    "gender": "male",
+    "debut_season": 3
+  },
+  {
+    "id": "hugo-centeno",
+    "name": "Hugo Centeno",
+    "country": "Spain",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "mahdi-disi",
+    "name": "Mahdi Disi",
+    "country": "Norway",
+    "gender": "male",
+    "debut_season": 3
+  },
+  {
+    "id": "arthur-broussard",
+    "name": "Arthur Broussard",
+    "country": "France",
+    "gender": "male",
+    "debut_season": 3
+  },
+  {
+    "id": "elia-santini",
+    "name": "Elia Santini",
+    "country": "Italy",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "moyo-makadi",
+    "name": "Moyo Makadi",
+    "country": "Belgium",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "dilan-hernandez",
+    "name": "Dilan Hernández",
+    "country": "Spain",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "eskild-tryggvason",
+    "name": "Eskild Tryggvason",
+    "country": "Norway",
+    "gender": "male",
+    "debut_season": 2
+  },
+  {
+    "id": "mickael-dolleron",
+    "name": "Mickäel Dolleron",
+    "country": "France",
+    "gender": "male",
+    "debut_season": 2
+  },
+  {
+    "id": "filippo-sava",
+    "name": "Filippo Sava",
+    "country": "Italy",
+    "gender": "male",
+    "debut_season": 2
+  },
+  {
+    "id": "hans-brecht",
+    "name": "Hans Brecht",
+    "country": "Germany",
+    "gender": "male",
+    "debut_season": 2
+  },
+  {
+    "id": "milan-hendrickx",
+    "name": "Milan Hendrickx",
+    "country": "Belgium",
+    "gender": "male",
+    "debut_season": 2
+  },
+  {
+    "id": "eve-olsen",
+    "name": "Eve Olsen",
+    "country": "USA",
+    "gender": "female",
+    "debut_season": 2
+  },
+  {
+    "id": "ralph-hansen",
+    "name": "Ralph Hansen",
+    "country": "The Netherlands",
+    "gender": "male",
+    "debut_season": 2
+  },
+  {
+    "id": "vito",
+    "name": "Vito",
+    "country": "Croatia",
+    "gender": "male",
+    "debut_season": 2
+  },
+  {
+    "id": "linn-larsen-hansen",
+    "name": "Linn Larsen Hansen",
+    "country": "Norway",
+    "gender": "female",
+    "debut_season": 2
+  },
+  {
+    "id": "lisa",
+    "name": "Lisa",
+    "country": "France",
+    "gender": "female",
+    "debut_season": 2
+  },
+  {
+    "id": "linn-shira",
+    "name": "Linn Shira",
+    "country": "Germany",
+    "gender": "female",
+    "debut_season": 2
+  },
+  {
+    "id": "lisa-de-geyter",
+    "name": "Lisa De Geyter",
+    "country": "Belgium",
+    "gender": "female",
+    "debut_season": 2
+  },
+  {
+    "id": "masa-batalic",
+    "name": "Maša Batalić",
+    "country": "Croatia",
+    "gender": "female",
+    "debut_season": 2
+  },
+  {
+    "id": "ingrid-theis-gaupseth",
+    "name": "Ingrid Theis Gaupseth",
+    "country": "Norway",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "ingrid-spielman",
+    "name": "Ingrid Spielman",
+    "country": "France",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "laura-pandakovic",
+    "name": "Laura Pandakovic",
+    "country": "Italy",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "leonie-richter",
+    "name": "Leonie Richter",
+    "country": "Germany",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "britt-ingelbrecht",
+    "name": "Britt Ingelbrecht",
+    "country": "Belgium",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "abigail-heyward",
+    "name": "Abigail Heyward",
+    "country": "USA",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "olivia",
+    "name": "Olivia",
+    "country": "The Netherlands",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "ines-serrano-martinez",
+    "name": "Inés Serrano Martínez",
+    "country": "Spain",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "sara-norsic",
+    "name": "Sara Noršić",
+    "country": "Croatia",
+    "gender": "female",
+    "debut_season": 1
+  },
+  {
+    "id": "william-magnusson",
+    "name": "William Magnusson",
+    "country": "Norway",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "charles-munier",
+    "name": "Charles Munier",
+    "country": "France",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "edoardo-incanti",
+    "name": "Edoardo Incanti",
+    "country": "Italy",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "alexander-hardenberg",
+    "name": "Alexander Hardenberg",
+    "country": "Germany",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "senne-de-smet",
+    "name": "Senne De Smet",
+    "country": "Belgium",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "daniel-williamson",
+    "name": "Daniel Williamson",
+    "country": "USA",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "noah-boom",
+    "name": "Noah Boom",
+    "country": "The Netherlands",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "alejandro-beltran",
+    "name": "Alejandro Beltrán",
+    "country": "Spain",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "roko-maric",
+    "name": "Roko Marić",
+    "country": "Croatia",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "christoffer-schistad-p-chris",
+    "name": "Christoffer Schistad - P Chris",
+    "country": "Norway",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "alexandre-delano-alex",
+    "name": "Alexandre Delano - Alex",
+    "country": "France",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "federico-canegallo-fede",
+    "name": "Federico Canegallo - Fede",
+    "country": "Italy",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "samuel-fischer-sam",
+    "name": "Samuel Fischer - Sam",
+    "country": "Germany",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "luka-lemmens",
+    "name": "Luka Lemmens",
+    "country": "Belgium",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "jordan-diaz-jo",
+    "name": "Jordan Diaz - Jo",
+    "country": "USA",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "gijs-hartveld",
+    "name": "Gijs Hartveld",
+    "country": "The Netherlands",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "cristian-miralles-haro-cris",
+    "name": "Cristian Miralles Haro - Cris",
+    "country": "Spain",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "nikola-nix",
+    "name": "Nikola - Nix",
+    "country": "Croatia",
+    "gender": "male",
+    "debut_season": 1
+  },
+  {
+    "id": "emma-w-larzen",
+    "name": "Emma W. Larzen",
+    "country": "Norway",
+    "gender": "female",
+    "debut_season": 3
+  },
+  {
+    "id": "chloe-farge-jeanson",
+    "name": "Chloé Farge Jeanson",
+    "country": "France",
+    "gender": "female",
+    "debut_season": 3
+  },
+  {
+    "id": "emma-covitti",
+    "name": "Emma Covitti",
+    "country": "Italy",
+    "gender": "female",
+    "debut_season": 2
+  },
+  {
+    "id": "ema-sertic",
+    "name": "Ema Sertić",
+    "country": "Croatia",
+    "gender": "female",
+    "debut_season": 3
+  },
+  {
+    "id": "sonja",
+    "name": "Sonja",
+    "country": "Norway",
+    "gender": "female",
+    "debut_season": 3
+  },
+  {
+    "id": "lucille",
+    "name": "Lucille",
+    "country": "France",
+    "gender": "female",
+    "debut_season": 3
+  },
+  {
+    "id": "yousef-acar",
+    "name": "Yousef Acar",
+    "country": "Norway",
+    "gender": "male",
+    "debut_season": 4
+  },
+  {
+    "id": "sofiane-alaoui",
+    "name": "Sofiane Alaoui",
+    "country": "France",
+    "gender": "male",
+    "debut_season": 4
+  },
+  {
+    "id": "malik-doueiri",
+    "name": "Malik Doueiri",
+    "country": "Italy",
+    "gender": "male",
+    "debut_season": 4
+  },
+  {
+    "id": "mohammed-razzouk",
+    "name": "Mohammed Razzouk",
+    "country": "Germany",
+    "gender": "male",
+    "debut_season": 4
+  }
+]
