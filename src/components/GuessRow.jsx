@@ -25,7 +25,7 @@ export const GuessRow = ({ guess, targetCharacter }) => {
   else debutSeasonClass="bg-gray-300"
 
   return (
-    <div className="flex gap-3 mt-5 text-black">
+    <div className="flex flex-row items-center min-w-[820px] gap-3 mt-5 text-black">
         <div className={`${nameClass} w-48 text-center p-3 rounded-lg text-black`}>{guess.name}</div>
         <div className={`${countryClass} w-48 text-center p-3 rounded-lg text-black`}>{guess.country}</div>
         <div className={`${genderClass} w-48 text-center p-3 rounded-lg text-black`}>{guess.gender}</div>

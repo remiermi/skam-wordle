@@ -62,9 +62,10 @@ export const ClipPlayer = ({ youtubeId }) => {
           <iframe
             id="yt-iframe"
             style={{
-              width: "300%",
-              height: "100%",
-              marginLeft: "-100%",
+              width: "220%",
+              height: "110%",
+              marginLeft: "-60%",
+              marginTop: "-10%",
               pointerEvents: "none",
             }}
             src={`https://www.youtube.com/embed/${youtubeId}?autoplay=1&start=20&mute=0&controls=0&rel=0&modestbranding=1&iv_load_policy=3&cc_load_policy=1&loop=1&playlist=${youtubeId}&disablekb=1&enablejsapi=1&playsinline=1`}

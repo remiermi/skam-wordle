@@ -6,7 +6,7 @@ export const SeasonEpisodeDropdown = ({selectedSeason, setSelectedSeason, select
     const filteredEpisodes = episodes.filter(ep => ep.season === Number(selectedSeason));
     
     return (
-        <div className="flex md:flex-row flex-col justify-center gap-12">
+        <div className="flex md:flex-row flex-col justify-center gap-6">
             <div className="flex flex-col items-center">
                 <label className="text-center">Pick a season: </label>
                 <select value={selectedSeason} onChange={(e) => setSelectedSeason(e.target.value)}

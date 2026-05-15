@@ -13,12 +13,15 @@ export const ClipGuessGrid = ({ guesses, targetClip }) => {
   });
 
   return (
-    <div className="flex flex-col items-center">
-      <div className="flex border p-2 font-bold w-auto">
-        <div className="w-48 text-center">SEASON</div>
-        <div className="w-48 text-center">EPISODE</div>
-      </div>
-      <div className="grid grid-cols-2 w-full gap-2 mt-2">{listGuesses}</div>
+  <div className="flex flex-col items-center w-full px-4">
+    <div className="grid grid-cols-2 border p-2 mb-2 font-bold w-full max-w-[560px]">
+      <div className="text-center">SEASON</div>
+      <div className="text-center">EPISODE</div>
     </div>
-  );
+
+    <div className="w-full max-w-[560px]">
+      {listGuesses}
+    </div>
+  </div>
+);
 };

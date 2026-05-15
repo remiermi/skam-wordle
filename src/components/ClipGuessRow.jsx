@@ -19,9 +19,14 @@ export const ClipGuessRow = ({ guess, targetClip }) => {
   else if (guess.episode > targetClip.episode) episodeUpDownClass = "▼";
 
   return (
-    <>
-        <div className={`${seasonClass} text-center p-3 rounded-lg m-1 text-black`}>{guess.season}</div>
-        <div className={`${episodeClass} text-center p-3 rounded-lg m-1 text-black`}>{guess.episode} {episodeUpDownClass}</div>
-    </>
+    <div className="grid grid-cols-2 w-full">
+      <div className={`${seasonClass} text-center p-3 rounded-lg m-1 text-black`}>
+        {guess.season}
+      </div>
+
+      <div className={`${episodeClass} text-center p-3 rounded-lg m-1 text-black`}>
+        {guess.episode} {episodeUpDownClass}
+      </div>
+    </div>
   );
 };
