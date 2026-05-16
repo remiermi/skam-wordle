@@ -4,23 +4,40 @@ import { SeasonEpisodeDropdown } from "../components/SeasonEpisodeDropdown";
 import { ClipGuessGrid } from "../components/ClipGuessGrid";
 import { ClipPlayer } from "../components/ClipPlayer";
 import episodes from "../data/episodes.json";
+import { ClipGameOver } from "../components/ClipGameOver";
 
-export default function ClipGame() {
+const getDayOfYear = () => {
+  const now = new Date();
+  const start = new Date(now.getFullYear(), 0, 0);
+  return Math.floor((now - start) / 86_400_000);
+};
+
+export default function ClipGame({mode="daily"}) {
   const [guesses, setGuesses] = useState([]);
   const [targetClip, setTargetClip] = useState(null);
   const [isGameOver, setGameOver] = useState(false);
 
   const [season, setSeason] = useState("1");
   const [episode, setEpisode] = useState("1");
+  const [showGameOver, setShowGameOver] = useState(false);
   //const [dio, setDio] = useState(""); // dio necu sad ? ikad
 
   const maxGuesses = 5;
 
   useEffect(() => {
-        const randomIndex = Math.floor(Math.random() * clips.length);
-        const randomClip = clips[randomIndex];
-        setTargetClip(randomClip);
-    }, []);
+    if (mode === "daily") {
+      const todaySeed = getDayOfYear();
+      setTargetClip(clips[todaySeed % clips.length]);
+      const saved = JSON.parse(localStorage.getItem("dailyClip") || "{}");
+      if (saved.seed === todaySeed) {
+        setGuesses(saved.guesses || []);
+        setGameOver(true);
+      }
+    } else {
+      const randomIndex = Math.floor(Math.random() * clips.length);
+      setTargetClip(clips[randomIndex]);
+    }
+  }, []);
 
     const handleGuess = () => {
         const guessedClip = { season: Number(season), episode: Number(episode) };
@@ -29,9 +46,17 @@ export default function ClipGame() {
 
         if (targetClip && Number(season) === targetClip.season && Number(episode) === targetClip.episode) {
         setGameOver(true);
+        setShowGameOver(true);
+        if (mode === "daily") {
+            localStorage.setItem("dailyClip", JSON.stringify({ seed: getDayOfYear(), guesses: newGuesses }))
+        }
         // win
     } else if (newGuesses.length >= maxGuesses) {
         setGameOver(true);
+        setShowGameOver(true);
+        if (mode === "daily") {
+            localStorage.setItem("dailyClip", JSON.stringify({ seed: getDayOfYear(), guesses: newGuesses }))
+        }
     }
   }
 
@@ -50,7 +75,7 @@ export default function ClipGame() {
 
         {<ClipGuessGrid guesses={guesses} targetClip={targetClip} />}
 
-        {isGameOver && targetClip && <p className="text-center">Game over, the answer was S{targetClip.season}E{targetClip.episode}: {targetEpisodeName}</p>}
+        {showGameOver && <ClipGameOver isGameOver={showGameOver} targetClip = {targetClip} targetClipEpisode={targetEpisodeName} onClose={() => setShowGameOver(false)}/>}
     </div>
 );
 }
