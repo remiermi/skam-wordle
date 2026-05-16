@@ -29,7 +29,7 @@ export const SeasonEpisodeDropdown = ({selectedSeason, setSelectedSeason, select
                 <label className="invisible">Guess</label>
             <button style={{ backgroundColor: '#F0E400', fontFamily: 'Barlow, sans-serif', fontWeight: '800' }} 
                 className="text-black px-6 py-3 rounded-lg w-32 text-center"
-                disabled={isGameOver} onClick={handleGuess}>Guess</button>
+                disabled={isGameOver} onClick={handleGuess}>GUESS</button>
             </div>
         </div>
     );

@@ -3,9 +3,8 @@ import React, { useState, useEffect, useRef } from "react";
 export const ClipPlayer = ({ youtubeId }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
+  const [hasEnded, setHasEnded] = useState(false);
   const playerRef = useRef(null);
-
-  const videoUrl = `https://www.youtube.com/watch?v=${youtubeId}`;
 
   useEffect(() => {
     if (!isPlaying) return;
@@ -20,6 +19,12 @@ export const ClipPlayer = ({ youtubeId }) => {
       playerRef.current = new window.YT.Player("yt-iframe", {
         events: {
           onReady: (e) => e.target.playVideo(),
+          onStateChange: (e) => {
+            if (e.data === window.YT.PlayerState.ENDED) {
+              setHasEnded(true);
+              setIsPaused(true);
+            }
+          },
         },
       });
     };
@@ -31,6 +36,14 @@ export const ClipPlayer = ({ youtubeId }) => {
   const handleOverlayClick = () => {
     if (!playerRef.current) return;
 
+    if (hasEnded) {
+      playerRef.current.seekTo(15);
+      playerRef.current.playVideo();
+      setHasEnded(false);
+      setIsPaused(false);
+      return;
+    }
+
     if (isPaused) playerRef.current.playVideo();
     else playerRef.current.pauseVideo();
 
@@ -38,12 +51,12 @@ export const ClipPlayer = ({ youtubeId }) => {
   };
 
   return (
-  <div className="flex flex-col items-center mt-6 w-full px-4">
-    {!isPlaying ? (
-      <div
-        className="w-full max-w-[560px] aspect-video bg-black rounded-xl flex items-center justify-center cursor-pointer"
-        onClick={() => setIsPlaying(true)}
-      >
+    <div className="flex flex-col items-center mt-6 w-full px-4">
+      {!isPlaying ? (
+        <div
+          className="w-full max-w-[560px] aspect-video bg-black rounded-xl flex items-center justify-center cursor-pointer"
+          onClick={() => setIsPlaying(true)}
+        >
           <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center">
             <div
               style={{
@@ -63,12 +76,12 @@ export const ClipPlayer = ({ youtubeId }) => {
             id="yt-iframe"
             style={{
               width: "220%",
-              height: "110%",
+              height: "105%",
               marginLeft: "-60%",
               marginTop: "-10%",
               pointerEvents: "none",
             }}
-            src={`https://www.youtube.com/embed/${youtubeId}?autoplay=1&start=20&mute=0&controls=0&rel=0&modestbranding=1&iv_load_policy=3&cc_load_policy=1&loop=1&playlist=${youtubeId}&disablekb=1&enablejsapi=1&playsinline=1`}
+            src={`https://www.youtube.com/embed/${youtubeId}?autoplay=1&start=15&end=30&mute=0&controls=0&rel=0&modestbranding=1&iv_load_policy=3&cc_load_policy=1&disablekb=1&enablejsapi=1&playsinline=1`}
             allow="autoplay; encrypted-media"
             allowFullScreen
             title="YouTube video player"
@@ -78,7 +91,7 @@ export const ClipPlayer = ({ youtubeId }) => {
             className="absolute inset-0 z-10 cursor-pointer flex items-center justify-center"
             onClick={handleOverlayClick}
           >
-            {isPaused && (
+            {(isPaused || hasEnded) && (
               <div className="w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center">
                 <div
                   style={{

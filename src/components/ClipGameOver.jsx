@@ -1,7 +1,8 @@
 import React from "react";
 import {IoClose} from "react-icons/io5"
+import { Link } from "react-router-dom";
 
-export const ClipGameOver = ({ isGameOver, targetClip, targetClipEpisode, onClose }) => {
+export const ClipGameOver = ({ isGameOver, targetClip, targetClipEpisode, onClose, onPlayAgain }) => {
   if (!isGameOver || !targetClip) return null;
 
   return (
@@ -27,8 +28,23 @@ export const ClipGameOver = ({ isGameOver, targetClip, targetClipEpisode, onClos
           allowFullScreen
           className="rounded-lg"
         />
-        <button style={{ backgroundColor: '#F0E400', fontFamily: 'Barlow, sans-serif', fontWeight: '800' }} 
-                className="text-black px-3 py-3 rounded-lg w-32 text-center mt-5">UNLIMITED MODE</button>
+        {onPlayAgain ? (
+        <button
+            onClick={onPlayAgain}
+            style={{ backgroundColor: '#F0E400', fontFamily: 'Barlow, sans-serif', fontWeight: '800' }}
+            className="text-black px-3 py-3 rounded-lg w-44 text-center mt-5"
+        >
+            PLAY AGAIN
+        </button>
+        ) : (
+        <Link
+            to="/clipdleUnlimited"
+            style={{ backgroundColor: '#F0E400', fontFamily: 'Barlow, sans-serif', fontWeight: '800' }}
+            className="text-black px-3 py-3 rounded-lg w-44 text-center mt-5"
+        >
+            UNLIMITED MODE
+        </Link>
+        )}
       </div>
     </div>
   );

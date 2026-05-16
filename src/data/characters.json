@@ -231,13 +231,6 @@
     "debut_season": 1
   },
   {
-    "id": "imaan-elami",
-    "name": "Imaan Elami",
-    "country": "The Netherlands",
-    "gender": "female",
-    "debut_season": 1
-  },
-  {
     "id": "amira-naybet",
     "name": "Amira Naybet",
     "country": "Spain",
@@ -532,23 +525,9 @@
     "debut_season": 3
   },
   {
-    "id": "elia-santini",
-    "name": "Elia Santini",
-    "country": "Italy",
-    "gender": "male",
-    "debut_season": 1
-  },
-  {
     "id": "moyo-makadi",
     "name": "Moyo Makadi",
     "country": "Belgium",
-    "gender": "male",
-    "debut_season": 1
-  },
-  {
-    "id": "dilan-hernandez",
-    "name": "Dilan Hernández",
-    "country": "Spain",
     "gender": "male",
     "debut_season": 1
   },
@@ -651,20 +630,6 @@
     "debut_season": 1
   },
   {
-    "id": "ingrid-spielman",
-    "name": "Ingrid Spielman",
-    "country": "France",
-    "gender": "female",
-    "debut_season": 1
-  },
-  {
-    "id": "laura-pandakovic",
-    "name": "Laura Pandakovic",
-    "country": "Italy",
-    "gender": "female",
-    "debut_season": 1
-  },
-  {
     "id": "leonie-richter",
     "name": "Leonie Richter",
     "country": "Germany",
@@ -675,27 +640,6 @@
     "id": "britt-ingelbrecht",
     "name": "Britt Ingelbrecht",
     "country": "Belgium",
-    "gender": "female",
-    "debut_season": 1
-  },
-  {
-    "id": "abigail-heyward",
-    "name": "Abigail Heyward",
-    "country": "USA",
-    "gender": "female",
-    "debut_season": 1
-  },
-  {
-    "id": "olivia",
-    "name": "Olivia",
-    "country": "The Netherlands",
-    "gender": "female",
-    "debut_season": 1
-  },
-  {
-    "id": "ines-serrano-martinez",
-    "name": "Inés Serrano Martínez",
-    "country": "Spain",
     "gender": "female",
     "debut_season": 1
   },
