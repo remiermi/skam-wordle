@@ -6,12 +6,12 @@ export const Footer = () => {
       <p>
         Made by{" "}
         <a
-          href="https://twitter.com/dilfsIeif"
+          href="https://github.com/remiermi"
           target="_blank"
           rel="noopener noreferrer"
           className="underline hover:text-gray-300"
         >
-          @dilfsIeif
+          remiermi
         </a>
         . All trademarks, characters, and media belong to their respective
         owners. Embedded video content is provided via YouTube.
