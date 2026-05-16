@@ -40,17 +40,12 @@ export default function ClipGame() {
   : null;
 
   return (
-    <div className="bg-black min-h-screen text-white flex flex-col items-center justify-start gap-6 px-4 py-6">
+    <div className="bg-black min-h-screen text-white flex flex-col items-center justify-start gap-4 px-4 py-4 overflow-x-hidden">
 
         {targetClip && (<ClipPlayer youtubeId={targetClip.youtubeId} />)}
         <div className="flex flex-col md:flex-row items-end gap-6 w-full max-w-[650px]">
-            <SeasonEpisodeDropdown guesses={guesses} selectedSeason={season} setSelectedSeason={setSeason} selectedEpisode ={episode} setSelectedEpisode={setEpisode}/>
-            <div className="flex flex-col md:flex-row items-center gap-4 md:gap-12 w-full max-w-[650px]">
-                <button style={{ backgroundColor: '#F0E400', fontFamily: 'Barlow, sans-serif', fontWeight: '800' }} 
-                className="text-black px-6 py-3 rounded-lg w-32 text-center" 
-                disabled={isGameOver} 
-                onClick={handleGuess}>Guess</button>
-                </div>
+            <SeasonEpisodeDropdown guesses={guesses} selectedSeason={season} setSelectedSeason={setSeason} selectedEpisode ={episode} setSelectedEpisode={setEpisode}
+            isGameOver={isGameOver} handleGuess={handleGuess}/>
         </div>
 
         {<ClipGuessGrid guesses={guesses} targetClip={targetClip} />}
