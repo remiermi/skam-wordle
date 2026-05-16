@@ -25,11 +25,11 @@ export const GuessRow = ({ guess, targetCharacter }) => {
   else debutSeasonClass="bg-gray-300"
 
   return (
-    <div className="flex flex-row items-center min-w-[820px] gap-3 mt-5 text-black">
-        <div className={`${nameClass} w-48 text-center p-3 rounded-lg text-black`}>{guess.name}</div>
-        <div className={`${countryClass} w-48 text-center p-3 rounded-lg text-black`}>{guess.country}</div>
-        <div className={`${genderClass} w-48 text-center p-3 rounded-lg text-black`}>{guess.gender}</div>
-        <div className={`${debutSeasonClass} w-48 text-center p-3 rounded-lg text-black`}>{guess.debut_season}</div>
+    <div className="grid grid-cols-[1.4fr_1fr_1fr_0.8fr] gap-1 mt-2 text-black text-[10px] md:text-base">
+        <div className={`${nameClass} text-center p-3 rounded-lg text-black`}>{guess.name}</div>
+        <div className={`${countryClass} text-center p-3 rounded-lg text-black`}>{guess.country}</div>
+        <div className={`${genderClass} text-center p-3 rounded-lg text-black`}>{guess.gender}</div>
+        <div className={`${debutSeasonClass} text-center p-3 rounded-lg text-black`}>{guess.debut_season}</div>
     </div>
   );
 };

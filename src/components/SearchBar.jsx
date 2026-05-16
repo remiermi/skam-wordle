@@ -23,7 +23,7 @@ export const SearchBar = ({setResults, input, setInput, isGameOver, guesses}) =>
   return (
     <div className="flex justify-center mt-10">
       <input
-        className="rounded-sm border border-white px-4 py-2 w-80"
+        className="rounded-sm border border-white px-4 py-2 w-full max-w-[320px] md:max-w-[500px] text-sm md:text-base"
         placeholder="Type a character..." value={input} disabled={isGameOver} onChange={(e) => handleChange(e.target.value)}
       />
     </div>
