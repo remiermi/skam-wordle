@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <footer className="w-full bg-black text-white text-center p-4 mt-10 text-sm">
       <p>
-        Fan-made project by{" "}
+        Made by{" "}
         <a
           href="https://twitter.com/dilfsIeif"
           target="_blank"
