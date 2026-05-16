@@ -5,10 +5,14 @@ import { SearchResultsList } from "../components/SearchResultsList";
 import { GuessGrid } from "../components/GuessGrid";
 import { CharGameOver } from "../components/CharGameOver";
 
-const getDayOfYear = () => {
+const getTodayKey = () => {
   const now = new Date();
-  const start = new Date(now.getFullYear(), 0, 0);
-  return Math.floor((now - start) / 86_400_000);
+  return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+};
+
+const getDailyIndex = () => {
+  const dateNumber = Number(getTodayKey().replaceAll("-", ""));
+  return dateNumber % characters.length;
 };
 
 export default function Game() {
@@ -22,14 +26,24 @@ export default function Game() {
   const maxGuesses = 8;
 
   useEffect(() => {
-    const todaySeed = getDayOfYear();
-    setTargetCharacter(characters[todaySeed % characters.length]);
+    const dailyCharacter = characters[getDailyIndex()];
+    setTargetCharacter(dailyCharacter);
 
     const saved = JSON.parse(localStorage.getItem("dailyChar") || "{}");
-    if (saved.seed === todaySeed) {
-      setGuesses(saved.guesses || []);
-      setGameOver(true);
-      setShowGameOver(false); // ne otvara modal na refresh
+
+    if (saved.date === getTodayKey()) {
+      const savedGuesses = saved.guesses || [];
+      setGuesses(savedGuesses);
+
+      const lastGuess = savedGuesses[savedGuesses.length - 1];
+
+      const isCorrect = lastGuess && lastGuess.id === dailyCharacter.id;
+      const isOutOfGuesses = savedGuesses.length >= maxGuesses;
+
+      if (isCorrect || isOutOfGuesses) {
+        setGameOver(true);
+        setShowGameOver(false);
+      }
     }
   }, []);
 
@@ -39,16 +53,17 @@ export default function Game() {
     setResults([]);
     setInput("");
 
+    localStorage.setItem(
+      "dailyChar",
+      JSON.stringify({ date: getTodayKey(), guesses: newGuesses })
+    );
+
     const isCorrect = targetCharacter && character.id === targetCharacter.id;
     const isOutOfGuesses = newGuesses.length >= maxGuesses;
 
     if (isCorrect || isOutOfGuesses) {
       setGameOver(true);
       setShowGameOver(true);
-      localStorage.setItem(
-        "dailyChar",
-        JSON.stringify({ seed: getDayOfYear(), guesses: newGuesses })
-      );
     }
   };
 

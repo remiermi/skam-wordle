@@ -5,12 +5,15 @@ import { SeasonEpisodeDropdown } from "../components/SeasonEpisodeDropdown";
 import { ClipGuessGrid } from "../components/ClipGuessGrid";
 import { ClipPlayer } from "../components/ClipPlayer";
 import { ClipGameOver } from "../components/ClipGameOver";
-import { Link } from "react-router-dom";
 
-const getDayOfYear = () => {
+const getTodayKey = () => {
   const now = new Date();
-  const start = new Date(now.getFullYear(), 0, 0);
-  return Math.floor((now - start) / 86_400_000);
+  return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+};
+
+const getDailyIndex = () => {
+  const dateNumber = Number(getTodayKey().replaceAll("-", ""));
+  return dateNumber % clips.length;
 };
 
 const getRandomClip = () => {
@@ -45,7 +48,7 @@ export default function ClipGame({ mode = "daily" }) {
       localStorage.setItem(
         "dailyClip",
         JSON.stringify({
-          seed: getDayOfYear(),
+          date: getTodayKey(),
           guesses: finalGuesses,
         })
       );
@@ -56,15 +59,28 @@ export default function ClipGame({ mode = "daily" }) {
     resetGameState();
 
     if (mode === "daily") {
-      const todaySeed = getDayOfYear();
-      setTargetClip(clips[todaySeed % clips.length]);
+      setTargetClip(clips[getDailyIndex()]);
 
       const saved = JSON.parse(localStorage.getItem("dailyClip") || "{}");
 
-      if (saved.seed === todaySeed) {
-        setGuesses(saved.guesses || []);
-        setGameOver(true);
-        setShowGameOver(true);
+      if (saved.date === getTodayKey()) {
+        const savedGuesses = saved.guesses || [];
+        setGuesses(savedGuesses);
+
+        const lastGuess = savedGuesses[savedGuesses.length - 1];
+        const dailyClip = clips[getDailyIndex()];
+
+        const isCorrect =
+          lastGuess &&
+          lastGuess.season === dailyClip.season &&
+          lastGuess.episode === dailyClip.episode;
+
+        const isOutOfGuesses = savedGuesses.length >= maxGuesses;
+
+        if (isCorrect || isOutOfGuesses) {
+          setGameOver(true);
+          setShowGameOver(true);
+        }
       }
     } else {
       setTargetClip(getRandomClip());
@@ -81,6 +97,16 @@ export default function ClipGame({ mode = "daily" }) {
 
     const newGuesses = [...guesses, guessedClip];
     setGuesses(newGuesses);
+
+    if (mode === "daily") {
+      localStorage.setItem(
+        "dailyClip",
+        JSON.stringify({
+          date: getTodayKey(),
+          guesses: newGuesses,
+        })
+      );
+    }
 
     const isCorrect =
       guessedClip.season === targetClip.season &&
