@@ -10,9 +10,27 @@ const getTodayKey = () => {
   return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
 };
 
+const DAILY_RANDOM_START = "2026-05-20";
+
+const seededIndex = (dateKey) => {
+  let hash = 0;
+
+  for (let i = 0; i < dateKey.length; i++) {
+    hash = (hash * 31 + dateKey.charCodeAt(i)) >>> 0;
+  }
+
+  return hash % characters.length;
+};
+
 const getDailyIndex = () => {
-  const dateNumber = Number(getTodayKey().replaceAll("-", ""));
-  return dateNumber % characters.length;
+  const today = getTodayKey();
+
+  if (today < DAILY_RANDOM_START) {
+    const dateNumber = Number(today.replaceAll("-", ""));
+    return dateNumber % characters.length;
+  }
+
+  return seededIndex(today);
 };
 
 export default function Game() {

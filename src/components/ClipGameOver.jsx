@@ -12,14 +12,11 @@ export const ClipGameOver = ({ isGameOver, targetClip, targetClipEpisode, onClos
           <IoClose size={24} />
         </button>
         <div className="text-center mb-2 font-bold">GAME OVER</div>
-
         <div className="text-center mb-4 font-bold">
           THE EPISODE WAS: S{targetClip.season}E{targetClip.episode}:{" "}
           {targetClipEpisode}
         </div>
-
         <div className="text-center mb-4 font-bold">WATCH THE CLIP HERE:</div>
-
         <iframe
           width="100%"
           height="315"
@@ -33,9 +30,7 @@ export const ClipGameOver = ({ isGameOver, targetClip, targetClipEpisode, onClos
             onClick={onPlayAgain}
             style={{ backgroundColor: '#F0E400', fontFamily: 'Barlow, sans-serif', fontWeight: '800' }}
             className="text-black px-3 py-3 rounded-lg w-44 text-center mt-5"
-        >
-            PLAY AGAIN
-        </button>
+        > PLAY AGAIN</button>
         ) : (
         <Link
             to="/clipdleUnlimited"
