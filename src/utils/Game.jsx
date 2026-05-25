@@ -10,16 +10,22 @@ const getTodayKey = () => {
   return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
 };
 
-const DAILY_RANDOM_START = "2026-05-20";
+const DAILY_RANDOM_START = "2026-05-27";
 
 const seededIndex = (dateKey) => {
-  let hash = 0;
+  let seed = 0;
 
   for (let i = 0; i < dateKey.length; i++) {
-    hash = (hash * 31 + dateKey.charCodeAt(i)) >>> 0;
+    seed = (seed * 31 + dateKey.charCodeAt(i)) >>> 0;
   }
 
-  return hash % characters.length;
+  seed += 0x6D2B79F5;
+  seed = Math.imul(seed ^ (seed >>> 15), seed | 1);
+  seed ^= seed + Math.imul(seed ^ (seed >>> 7), seed | 61);
+
+  const random = ((seed ^ (seed >>> 14)) >>> 0) / 4294967296;
+
+  return Math.floor(random * characters.length);
 };
 
 const getDailyIndex = () => {
