@@ -31,6 +31,10 @@ const seededIndex = (dateKey) => {
 const getDailyIndex = () => {
   const today = getTodayKey();
 
+  if (today === "2026-05-26") {
+    return Number("20260526") % characters.length;
+  }
+
   if (today < DAILY_RANDOM_START) {
     const dateNumber = Number(today.replaceAll("-", ""));
     return dateNumber % characters.length;
